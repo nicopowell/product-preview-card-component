@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: #f2ebe3;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background: none;
+  width: 600px;
+  height: 450px;
+  display: flex;
+  filter: drop-shadow(15px 15px 15px #00000075);
+}
+
+aside {
+  width: 50%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.smallImg {
+  display: none;
+}
+
+.bigImg {
+  display: inline;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.imgContainer {
+  background: none;
+}
+
+.infoContainer {
+  background: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#perfume {
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  color: #6c7289;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+#actual {
+  color: #3c8067;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+}
+
+#previous {
+  text-decoration: line-through;
+  padding-left: 1rem;
+}
+
+button {
+  padding: 1rem;
+  color: #ffffff;
+  background: #3c8067;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button p {
+  display: inline;
+  color: #ffffff;
+  margin-left: 0.5rem;
+}
+
+button:active {
+  background: #1a4031;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    flex-direction: column;
+    height: 600px;
+    width: 90%;
+  }
+
+  .imgContainer {
+    width: 100%;
+    height: 35%;
+  }
+
+  .infoContainer {
+    padding: 1.5rem;
+    width: 100%;
+    height: 65%;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .smallImg {
+    display: inline;
+    height: 100%;
+    object-position: 50% 0%;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .bigImg {
+    display: none;
+  }
+}
