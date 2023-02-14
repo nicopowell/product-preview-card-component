@@ -108,8 +108,13 @@ button p {
   margin-left: 0.5rem;
 }
 
+button:hover,
 button:active {
   background: #1a4031;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 .attribution {
